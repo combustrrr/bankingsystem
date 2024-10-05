@@ -8,19 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f06f5eb-719f-45b8-87c7-c7fcee3fc599" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bank System.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/BankingSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/DatabaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/AccountPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/DepositPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/ViewTransactionsPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/WithdrawPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/buttons/RoundedButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/AccountPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/AccountPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/DepositPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/DepositPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/WithdrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/WithdrawPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/buttons/RoundedButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/banking/system/ui/panels/buttons/RoundedButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;combustrrr&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/combustrrr/bankingsystem.git&quot;,
+    &quot;accountId&quot;: &quot;baba95dd-4523-4d1b-ac2d-fc8daea85853&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
     <option name="showPreview" value="true" />
@@ -69,7 +73,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/icsar/OneDrive/Documents/SEM3/AJ/Bank System/src/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -103,6 +107,8 @@
       <workItem from="1726238091132" duration="81000" />
       <workItem from="1726238187545" duration="1123000" />
       <workItem from="1728110443299" duration="4588000" />
+      <workItem from="1728118858619" duration="738000" />
+      <workItem from="1728120665186" duration="2490000" />
     </task>
     <servers />
   </component>
@@ -119,5 +125,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bankingsystem$BankingSystem.ic" NAME="BankingSystem Coverage Results" MODIFIED="1728119222856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>main.java.com.banking.system.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -8,7 +8,15 @@ import java.awt.event.ActionEvent;
 
 import static main.java.com.banking.system.BankingSystem.withdraw;
 
+/**
+ * A panel for withdrawing money from an account.
+ */
 public class WithdrawPanel {
+    /**
+     * Creates a new panel for withdrawing money from an account.
+     *
+     * @return a new panel for withdrawing money from an account
+     */
     public static JPanel withdrawPanel() {
         JPanel panel = new JPanel(new GridBagLayout());
         panel.setBorder(BorderFactory.createTitledBorder("Withdraw"));
@@ -20,7 +28,7 @@ public class WithdrawPanel {
         JTextField accNumberField = new JTextField(20);
         JLabel amountLabel = new JLabel("Amount:");
         JTextField amountField = new JTextField(20);
-        JButton withdrawButton = new RoundedButton("Withdraw");
+        RoundedButton withdrawButton = new RoundedButton("Withdraw");
 
         gbc.gridx = 0;
         gbc.gridy = 0;
@@ -37,7 +45,7 @@ public class WithdrawPanel {
         gbc.gridwidth = 2;
         panel.add(withdrawButton, gbc);
 
-        withdrawButton.addActionListener((ActionEvent _) -> {
+        withdrawButton.addActionListener(e -> {
             String accountNumber = accNumberField.getText();
             String amountText = amountField.getText();
 
@@ -53,6 +61,8 @@ public class WithdrawPanel {
                     return;
                 }
                 withdraw(accountNumber, amount);
+                accNumberField.setText("");
+                amountField.setText("");
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(null, "Please enter a valid amount", "Error", JOptionPane.ERROR_MESSAGE);
             }

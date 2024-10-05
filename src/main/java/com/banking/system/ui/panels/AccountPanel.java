@@ -7,7 +7,15 @@ import java.awt.*;
 
 import static main.java.com.banking.system.BankingSystem.createAccount;
 
+/**
+ * A panel for creating a new account.
+ */
 public class AccountPanel {
+    /**
+     * Creates a new panel for creating a new account.
+     *
+     * @return a new panel for creating a new account
+     */
     public static JPanel createAccountPanel() {
         JPanel panel = new JPanel(new GridBagLayout());
         panel.setBorder(BorderFactory.createTitledBorder("Create Account"));
@@ -19,7 +27,7 @@ public class AccountPanel {
         JTextField nameField = new JTextField(20);
         JLabel accNumberLabel = new JLabel("Account Number:");
         JTextField accNumberField = new JTextField(20);
-        JButton createButton = new RoundedButton("Create Account");
+        RoundedButton createButton = new RoundedButton("Create Account");
 
         gbc.gridx = 0;
         gbc.gridy = 0;
@@ -36,7 +44,7 @@ public class AccountPanel {
         gbc.gridwidth = 2;
         panel.add(createButton, gbc);
 
-        createButton.addActionListener(_ -> {
+        createButton.addActionListener(e -> {
             String customerName = nameField.getText();
             String accountNumber = accNumberField.getText();
 
@@ -46,6 +54,8 @@ public class AccountPanel {
             }
 
             createAccount(customerName, accountNumber);
+            nameField.setText("");
+            accNumberField.setText("");
         });
 
         return panel;

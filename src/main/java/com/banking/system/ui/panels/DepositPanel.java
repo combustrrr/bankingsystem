@@ -8,7 +8,15 @@ import java.awt.event.ActionEvent;
 
 import static main.java.com.banking.system.BankingSystem.deposit;
 
+/**
+ * A panel for depositing money into an account.
+ */
 public class DepositPanel {
+    /**
+     * Creates a new panel for depositing money into an account.
+     *
+     * @return a new panel for depositing money into an account
+     */
     public static JPanel depositPanel() {
         JPanel panel = new JPanel(new GridBagLayout());
         panel.setBorder(BorderFactory.createTitledBorder("Deposit"));
@@ -20,7 +28,7 @@ public class DepositPanel {
         JTextField accNumberField = new JTextField(20);
         JLabel amountLabel = new JLabel("Amount:");
         JTextField amountField = new JTextField(20);
-        JButton depositButton = new RoundedButton("Deposit");
+        RoundedButton depositButton = new RoundedButton("Deposit");
 
         gbc.gridx = 0;
         gbc.gridy = 0;
@@ -37,7 +45,7 @@ public class DepositPanel {
         gbc.gridwidth = 2;
         panel.add(depositButton, gbc);
 
-        depositButton.addActionListener((ActionEvent _) -> {
+        depositButton.addActionListener(e -> {
             String accountNumber = accNumberField.getText();
             String amountText = amountField.getText();
 
@@ -53,6 +61,8 @@ public class DepositPanel {
                     return;
                 }
                 deposit(accountNumber, amount);
+                accNumberField.setText("");
+                amountField.setText("");
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(null, "Please enter a valid amount", "Error", JOptionPane.ERROR_MESSAGE);
             }
